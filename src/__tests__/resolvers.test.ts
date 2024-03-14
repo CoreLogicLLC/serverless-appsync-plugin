@@ -106,7 +106,7 @@ describe('Resolvers', () => {
               "Description": undefined,
               "FunctionVersion": "2018-05-29",
               "MaxBatchSize": undefined,
-              "Name": "my-function",
+              "Name": "myfunction",
               "Runtime": Object {
                 "Name": "APPSYNC_JS",
                 "RuntimeVersion": "1.0.0",

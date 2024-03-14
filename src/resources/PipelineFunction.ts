@@ -30,7 +30,7 @@ export class PipelineFunction {
 
     const Properties: CfnFunctionResolver['Properties'] = {
       ApiId: this.api.getApiId(),
-      Name: this.config.name,
+      Name: this.api.naming.getLogicalId(this.config.name),
       DataSourceName: { 'Fn::GetAtt': [logicalIdDataSource, 'Name'] },
       Description: this.config.description,
       FunctionVersion: '2018-05-29',
